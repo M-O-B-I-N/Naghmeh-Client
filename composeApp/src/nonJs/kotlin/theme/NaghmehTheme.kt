@@ -50,5 +50,4 @@ fun NaghmehTheme(
         typography = Typography,
         content = content
     )
-
 }
