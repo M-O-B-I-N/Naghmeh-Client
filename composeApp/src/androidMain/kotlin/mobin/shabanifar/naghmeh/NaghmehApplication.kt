@@ -6,14 +6,14 @@ import mobin.shabanifar.naghmeh.features.poet.data.di.poetModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
-class MyApplication : Application() {
+class NaghmehApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
 
         // Start Koin
         startKoin {
-            androidContext(this@MyApplication)
+            androidContext(this@NaghmehApplication)
             modules(
                 httpEngineModule(),
                 networkModule,
@@ -23,4 +23,3 @@ class MyApplication : Application() {
         }
     }
 }
-

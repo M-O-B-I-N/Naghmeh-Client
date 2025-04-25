@@ -11,6 +11,8 @@ plugins {
     alias(libs.plugins.kotlinSerialization)
     alias(libs.plugins.ksp)
     alias(libs.plugins.room)
+    alias(libs.plugins.ktlint)
+    alias(libs.plugins.detekt)
 }
 
 kotlin {
@@ -49,7 +51,6 @@ kotlin {
     room {
         schemaDirectory("$projectDir/schemas")
     }
-
 
     sourceSets {
         val desktopMain by getting
@@ -111,7 +112,6 @@ android {
         room {
             schemaDirectory("$projectDir/schemas")
         }
-
 
         ksp {
             arg("room.schemaLocation", "$projectDir/schemas")
