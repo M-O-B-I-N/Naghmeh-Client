@@ -52,6 +52,18 @@ kotlin {
         schemaDirectory("$projectDir/schemas")
     }
 
+    ktlint {
+        filter {
+            exclude("**/build/**")
+            exclude("**/generated/**")
+        }
+    }
+
+    detekt {
+        buildUponDefaultConfig = true
+        ignoredBuildTypes = listOf("generated")
+    }
+
     sourceSets {
         val desktopMain by getting
         val androidMain by getting
