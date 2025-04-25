@@ -9,6 +9,6 @@ class JVMPlatform: Platform {
 
 actual fun getPlatform(): Platform = JVMPlatform()
 
-actual fun platformModule(): Module = module {
+actual fun httpEngineModule(): Module = module {
 
 }
