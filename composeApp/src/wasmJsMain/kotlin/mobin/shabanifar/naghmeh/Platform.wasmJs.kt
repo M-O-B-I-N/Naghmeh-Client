@@ -9,6 +9,6 @@ class WasmPlatform: Platform {
 
 actual fun getPlatform(): Platform = WasmPlatform()
 
-actual fun platformModule(): Module = module {
+actual fun httpEngineModule(): Module = module {
 
 }

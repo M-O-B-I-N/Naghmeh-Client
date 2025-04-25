@@ -12,6 +12,6 @@ class AndroidPlatform : Platform {
 
 actual fun getPlatform(): Platform = AndroidPlatform()
 
-actual fun platformModule(): Module = module {
+actual fun httpEngineModule(): Module = module {
     single<HttpClientEngineFactory<*>> { OkHttp }
 }
