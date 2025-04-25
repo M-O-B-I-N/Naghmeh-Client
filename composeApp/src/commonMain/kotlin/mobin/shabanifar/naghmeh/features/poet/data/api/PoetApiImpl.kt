@@ -10,10 +10,9 @@ import mobin.shabanifar.naghmeh.features.poet.data.model.PoetWithImagesResponse
 import mobin.shabanifar.naghmeh.server.NetworkResult
 import mobin.shabanifar.naghmeh.server.RequestHandler
 
-
 class PoetApiImpl(
     private val requestHandler: RequestHandler,
-    private val baseUrl: String,
+    private val baseUrl: String
 ) : PoetApi {
     override suspend fun getPoetsByCentury(century: Int): NetworkResult<List<PoetWithBirthYear?>> {
         return requestHandler.executeRequest {
@@ -49,4 +48,3 @@ class PoetApiImpl(
         }
     }
 }
-

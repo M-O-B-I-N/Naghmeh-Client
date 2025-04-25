@@ -6,6 +6,5 @@ import theme.NaghmehTheme
 @Preview
 fun App() {
     NaghmehTheme {
-
     }
 }

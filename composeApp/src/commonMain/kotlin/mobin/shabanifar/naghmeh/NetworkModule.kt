@@ -18,10 +18,12 @@ val networkModule = module {
     single {
         HttpClient(get<HttpClientEngineFactory<*>>().create()) {
             install(ContentNegotiation) {
-                json(Json {
-                    ignoreUnknownKeys = true
-                    isLenient = true
-                })
+                json(
+                    Json {
+                        ignoreUnknownKeys = true
+                        isLenient = true
+                    }
+                )
             }
             defaultRequest {
                 contentType(ContentType.Application.Json)
