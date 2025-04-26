@@ -1,4 +1,4 @@
-package mobin.shabanifar.naghmeh.server
+package mobin.shabanifar.naghmeh.common
 
 import kotlinx.serialization.Serializable
 
