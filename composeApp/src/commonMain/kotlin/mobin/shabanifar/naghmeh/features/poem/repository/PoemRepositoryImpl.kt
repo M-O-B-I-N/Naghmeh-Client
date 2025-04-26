@@ -6,10 +6,10 @@ import mobin.shabanifar.naghmeh.features.poem.api.PoemApi
 import mobin.shabanifar.naghmeh.features.poem.model.PoemsOfCategoryRequest
 import mobin.shabanifar.naghmeh.features.poem.model.PoemsOfCategoryResponse
 
-class PoemRepositoryImpl(val api : PoemApi) :PoemRepository {
+class PoemRepositoryImpl(val api: PoemApi) : PoemRepository {
     override suspend fun getPoemsOfCategory(
         request: PoemsOfCategoryRequest
     ): NetworkResult<PaginatedResponse<PoemsOfCategoryResponse>> {
-       return api.poemsOfCategory(request)
+        return api.poemsOfCategory(request)
     }
 }

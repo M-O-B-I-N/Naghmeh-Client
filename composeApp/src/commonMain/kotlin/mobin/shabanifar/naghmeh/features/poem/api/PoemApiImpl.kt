@@ -4,9 +4,9 @@ import io.ktor.client.request.get
 import io.ktor.client.request.parameter
 import mobin.shabanifar.naghmeh.common.NetworkResult
 import mobin.shabanifar.naghmeh.common.PaginatedResponse
-import mobin.shabanifar.naghmeh.features.poem.model.PoemsOfCategoryResponse
 import mobin.shabanifar.naghmeh.common.RequestHandler
 import mobin.shabanifar.naghmeh.features.poem.model.PoemsOfCategoryRequest
+import mobin.shabanifar.naghmeh.features.poem.model.PoemsOfCategoryResponse
 
 class PoemApiImpl(
     private val requestHandler: RequestHandler,
@@ -17,13 +17,12 @@ class PoemApiImpl(
         request: PoemsOfCategoryRequest
     ): NetworkResult<PaginatedResponse<PoemsOfCategoryResponse>> {
         return requestHandler.executeRequest {
-            get("$baseUrl/poem/getPoemsOfCategory"){
-                parameter("categoryName" , request.categoryName)
-                parameter("poetName" , request.poetName)
-                parameter("page" , request.page)
-                parameter("pageSize" , request.pageSize)
+            get("$baseUrl/poem/getPoemsOfCategory") {
+                parameter("categoryName", request.categoryName)
+                parameter("poetName", request.poetName)
+                parameter("page", request.page)
+                parameter("pageSize", request.pageSize)
             }
         }
     }
-
 }

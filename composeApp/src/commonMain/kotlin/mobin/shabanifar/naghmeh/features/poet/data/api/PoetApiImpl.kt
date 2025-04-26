@@ -2,13 +2,13 @@ package mobin.shabanifar.naghmeh.features.poet.data.api
 
 import io.ktor.client.request.get
 import io.ktor.client.request.parameter
+import mobin.shabanifar.naghmeh.common.NetworkResult
+import mobin.shabanifar.naghmeh.common.RequestHandler
 import mobin.shabanifar.naghmeh.features.poet.data.model.Category
 import mobin.shabanifar.naghmeh.features.poet.data.model.FamousPoet
 import mobin.shabanifar.naghmeh.features.poet.data.model.PoetImageResponse
 import mobin.shabanifar.naghmeh.features.poet.data.model.PoetWithBirthYear
 import mobin.shabanifar.naghmeh.features.poet.data.model.PoetWithImagesResponse
-import mobin.shabanifar.naghmeh.common.NetworkResult
-import mobin.shabanifar.naghmeh.common.RequestHandler
 
 class PoetApiImpl(
     private val requestHandler: RequestHandler,

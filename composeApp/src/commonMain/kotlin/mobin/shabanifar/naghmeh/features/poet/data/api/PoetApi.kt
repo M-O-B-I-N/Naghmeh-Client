@@ -1,11 +1,11 @@
 package mobin.shabanifar.naghmeh.features.poet.data.api
 
+import mobin.shabanifar.naghmeh.common.NetworkResult
 import mobin.shabanifar.naghmeh.features.poet.data.model.Category
 import mobin.shabanifar.naghmeh.features.poet.data.model.FamousPoet
 import mobin.shabanifar.naghmeh.features.poet.data.model.PoetImageResponse
 import mobin.shabanifar.naghmeh.features.poet.data.model.PoetWithBirthYear
 import mobin.shabanifar.naghmeh.features.poet.data.model.PoetWithImagesResponse
-import mobin.shabanifar.naghmeh.common.NetworkResult
 
 interface PoetApi {
     suspend fun getPoetsByCentury(century: Int): NetworkResult<List<PoetWithBirthYear?>>
