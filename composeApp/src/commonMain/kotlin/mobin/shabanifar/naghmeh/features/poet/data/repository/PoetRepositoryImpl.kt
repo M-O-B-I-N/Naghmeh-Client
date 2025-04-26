@@ -6,7 +6,7 @@ import mobin.shabanifar.naghmeh.features.poet.data.model.FamousPoet
 import mobin.shabanifar.naghmeh.features.poet.data.model.PoetImageResponse
 import mobin.shabanifar.naghmeh.features.poet.data.model.PoetWithBirthYear
 import mobin.shabanifar.naghmeh.features.poet.data.model.PoetWithImagesResponse
-import mobin.shabanifar.naghmeh.server.NetworkResult
+import mobin.shabanifar.naghmeh.common.NetworkResult
 
 class PoetRepositoryImpl(private val poetApi: PoetApi) : PoetRepository {
     override suspend fun getPoetsByCentury(century: Int): NetworkResult<List<PoetWithBirthYear?>> {

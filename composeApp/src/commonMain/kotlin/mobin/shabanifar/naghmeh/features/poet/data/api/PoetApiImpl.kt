@@ -7,8 +7,8 @@ import mobin.shabanifar.naghmeh.features.poet.data.model.FamousPoet
 import mobin.shabanifar.naghmeh.features.poet.data.model.PoetImageResponse
 import mobin.shabanifar.naghmeh.features.poet.data.model.PoetWithBirthYear
 import mobin.shabanifar.naghmeh.features.poet.data.model.PoetWithImagesResponse
-import mobin.shabanifar.naghmeh.server.NetworkResult
-import mobin.shabanifar.naghmeh.server.RequestHandler
+import mobin.shabanifar.naghmeh.common.NetworkResult
+import mobin.shabanifar.naghmeh.common.RequestHandler
 
 class PoetApiImpl(
     private val requestHandler: RequestHandler,

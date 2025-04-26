@@ -9,7 +9,7 @@ import io.ktor.http.ContentType
 import io.ktor.http.contentType
 import io.ktor.serialization.kotlinx.json.json
 import kotlinx.serialization.json.Json
-import mobin.shabanifar.naghmeh.server.RequestHandler
+import mobin.shabanifar.naghmeh.common.RequestHandler
 import org.koin.dsl.module
 
 val networkModule = module {
