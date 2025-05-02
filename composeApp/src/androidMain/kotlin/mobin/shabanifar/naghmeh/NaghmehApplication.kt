@@ -2,6 +2,7 @@ package mobin.shabanifar.naghmeh
 
 import android.app.Application
 import mobin.shabanifar.naghmeh.di.appModule
+import mobin.shabanifar.naghmeh.features.favorite.data.di.favoriteModule
 import mobin.shabanifar.naghmeh.features.poet.data.di.poetModule
 import mobin.shabanifar.naghmeh.features.verse.di.verseModule
 import org.koin.android.ext.koin.androidContext
@@ -19,6 +20,8 @@ class NaghmehApplication : Application() {
                 httpEngineModule(),
                 networkModule,
                 poetModule,
+                poetModule,
+                favoriteModule,
                 verseModule,
                 appModule
             )
